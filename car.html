@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="car.css">
+    <title>Car Rental Service</title>
+</head>
+<body>
+    <header>
+        <h1>Car Rental Service</h1>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#car">Car</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="cars">
+        <h2>Available Cars</h2>
+        <div class="car-list">
+            <div class="car">
+                <img src="https://imgd.aeplcdn.com/300x225/image/used/l97n4jq9lxbt.jpeg?q=80" alt="Car 1">
+                <h3>Car Model 1</h3>
+                <p>Price: 500/day</p>
+                <button onclick="openBookingForm('Car Model 1', 50)">Book Now</button>
+            </div>
+            <div class="car">
+                <img src="https://imgd-ct.aeplcdn.com/640X480/cw/ucp/stockApiImg/VYFQ901_dajaj9w6_1_48591402.jpeg?q=80" alt="Car 2">
+                <h3>Car Model 2</h3>
+                <p>Price: 600/day</p>
+                <button onclick="openBookingForm('Car Model 2', 70)">Book Now</button>
+            </div>
+            <div class="car">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfZWSzYna0fk3hmWe6w8ysp5cBlBUogGhMQRg74_D5HP4kx98BhwoieYigs8lA4tEfwAo&usqp=CAU" alt="Car 3">
+                <h3>Car Model 3</h3>
+                <p>Price: 1100/day</p>
+                <button onclick="openBookingForm('Car Model 3', 40)">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking-form">
+        <h2>Booking Form</h2>
+        <form id="form">
+            <label for="car-model">Car Model:</label>
+            <input type="text" id="car-model" name="car-model" readonly>
+            
+            <label for="days">Number of Days:</label>
+            <input type="number" id="days" name="days" required>
+            
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Car Rental Service. All rights reserved.</p>
+    </footer>
+
+    <script src="car.js"></script>
+</body>
+</html>
